@@ -3,14 +3,14 @@ using NUnit.Framework;
 namespace Ucu.Poo.Repositories.Tests
 {
     [TestFixture]
-    public class CarsDatabaseTests
+    public class CarTests
     {
-        private CarsDatabase database;
+        private DataBase<Car> database;
 
         [SetUp]
         public void SetUp()
         {
-            this.database = new CarsDatabase();
+            this.database = new DataBase<Car>();
         }
 
         [Test]
